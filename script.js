@@ -1,8 +1,33 @@
 var pontuacao = 0;
-
-
 var melhoramentos=[false,false,false];
+var segundo = 0+"0";
+var minuto = 0+"0";
+var hora = 0+"0";
 
+function tempo(){
+   if (segundo < 59){
+      segundo++
+      if(segundo < 10){segundo = "0"+segundo}
+   }else
+      if(segundo == 59 && minuto < 59){
+         segundo = 0+"0";
+	minuto++;
+	if(minuto < 10){minuto = "0"+minuto}
+
+      }
+   if(minuto == 59 && segundo == 59 && hora < 23){
+      segundo = 0+"0";
+      minuto = 0+"0";
+      hora++;
+      if(hora < 10){hora = "0"+hora}
+   }else
+      if(minuto == 59 && segundo == 59 && hora == 23){
+         segundo = 0+"0";
+	minuto = 0+"0";
+	hora = 0+"0";
+      }
+      form.cronometro.value = hora +":"+ minuto +":"+ segundo
+}
 function contador(){
   pontuacao +=1;
 
@@ -27,47 +52,17 @@ function acresenta_3(){
 
 //Função que aumenta opacity ao comprar o upgrade
 function upgrade1(){
-document.getElementById("Mel1").style.opacity = "1.0";
+  document.getElementById("Mel1").style.opacity = "1.0";
 }
 
 function upgrade2(){
-document.getElementById("Mel2").style.opacity = "1.0";
+  document.getElementById("Mel2").style.opacity = "1.0";
 }
 
 function upgrade3(){
-document.getElementById("Mel3").style.opacity = "1.0";
+  document.getElementById("Mel3").style.opacity = "1.0";
 }
 //fim no aumento de opacity quando o upgrade e comprado
-
-
-//Funçoes feitas para quando da upgrade o bloco evoluir
-function evolucao1(){
-
-if(pontuacao >= 20 && pontuacao < 60){
-  document.getElementById("bloco").src="img/blocoFerroEvo1.png";
-}
-
-}
-//fim desse
-
-
-//começo desse
-function evolucao2(){
-
-if(pontuacao >= 60 && pontuacao < 100){
-  document.getElementById("bloco").src="img/blocoFerroEvo2.png";
-}
-}
-//fim desse
-
-//começo desse
-function evolucao3(){
-
-if(pontuacao >= 100 && pontuacao <= 1000){
-  document.getElementById("bloco").src="img/blocoFerroEvo3.png";
-}
-}
-//Fim nas evolucoes
 
 
 //A cada 20 segundo acresenta 1 as Engrenagem
@@ -76,8 +71,7 @@ if(pontuacao >= 100 && pontuacao <= 1000){
 function Melhoramento_1(){
     if(pontuacao>=20 && melhoramentos[0]===false){
         melhoramentos[0]=true;
-        setInterval(acresenta_1, 20000);
-        evolucao1();
+        setInterval(acresenta_1, 20000)
         upgrade1();
 
 }
@@ -91,9 +85,8 @@ function Melhoramento_2(){
 
   if(pontuacao>=60 && melhoramentos[1]===false){
       melhoramentos[1]=true;
-      setInterval(acresenta_2, 20000);
-	  evolucao2();
-    upgrade2();
+      setInterval(acresenta_2, 20000)
+      upgrade2();
 }
 
 //A cada 60 segundo acresenta 4 as Engrenagem
@@ -105,10 +98,9 @@ function Melhoramento_3(){
 
   if(pontuacao>=100 && melhoramentos[2]===false){
       melhoramentos[2]=true;
-      setInterval(acresenta_3, 10000);
-	  evolucao3();
-    upgrade3();
+      setInterval(acresenta_3, 10000)
+      upgrade3();
+    }
 }
 
-}
 //Fim nos melhoramentos
