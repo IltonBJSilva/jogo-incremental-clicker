@@ -1,0 +1,52 @@
+<!-- Nome do autor: Ilton Batista da Silva Júnior
+Data de criação do arquivo: 16/10/2018
+Objetivo sucinto do programa: Um jogo incremental na qual o usuario irar jogar e se divertir
+  -->
+  <html>
+  <title>Game Cool</title>
+  <head>
+     <link rel="stylesheet" type="text/css" href="estilos.css"/>
+     <script type="text/javascript" src="script.js"></script>
+     <meta name="description" content="Aprenda a usar a tag div em HTML & CSS">
+
+  </head>
+
+  <body>
+
+      <div id="jogo">
+
+          <img align="center" id="bloco" class="ImagemMes" src="img/blocoFerro.png" alt="blocoFerro"  width="500" height="333" onclick="contador();">
+      </div>
+
+        <div id="cronometro">
+            <form name="form">
+              <input type="text" name="cronometro" value = "00:00:00"/>
+
+        </div>
+      <h1><p id="engragem" align="left">Engrenagem: 0</p></h1>
+
+      <div id="telaprincipal" class="Ldiv">
+        <div class="Sep"><h2><p class="Upg" width="500" height="333"> UPGRADE</p></h2>
+
+            <div id="Update1">
+			    <img id="Mel1" align="left" class="Melh"  src="img/Melhoramento_1.png" alt="Melhoramento"  onclick="Melhoramento_1()">
+				<!--<br clear="right">Liberado com 20 pontos; Gera 1 ponto a cada 20 segundos</br>-->
+			</div>
+
+
+			<div id="Update2">
+                <img id="Mel2" align="right" class="Melh" align="left" src="img/torno.png" alt="Melhoramento" width="200" height="300" onclick="Melhoramento_2()">
+              <!--<a clear="all">Liberado com 60 pontos; Gera 4 ponto a cada 20 segundos</a>-->
+			</div>
+
+			<div id="Update3">
+                <img id="Mel3" class="Melh" align="left" src="img/rolamento.png" alt="Melhoramento" width="200" height="300" onclick="Melhoramento_3()">
+                <!--<a clear="left">Liberado com 100 pontos; Gera 40 ponto a cada 10 segundos</a>-->
+			</div>
+      </div>
+
+    </div>
+  </body>
+
+
+  </html>

@@ -1,0 +1,43 @@
+  body{
+
+  padding: 60px;
+  border: 1px solid #4CAF50;
+  left: 20px;
+  font-style: italic;
+  font-size: 20px;
+  border: ;
+
+}
+#jogo{
+  border: double;
+  width: 500px;
+  background-color: #669999;
+}
+
+
+
+.Ldiv{
+  border-left: 3px solid green;
+  height: 657px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+.vld{
+width:100%;
+height:1px;
+background: #fff
+
+}
+.Upg{
+  border-style: outset;
+}
+.Sep{
+  border-style: 20px solid;
+}
+.Melh {
+width: 110px;/* Faz a largura ficar igual a da largura da imagem de exemplo */
+height: 110px;/* Faz a altura ficar igual a da altura da imagem de exemplo */
+opacity: 0.5;
+}
