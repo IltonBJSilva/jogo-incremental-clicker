@@ -1,9 +1,27 @@
 var pontuacao = 0;
 var melhoramentos=[false,false,false];
+
+function Rep_Audio(){
+  var som = document.getElementById('meuAudio');
+
+  som.load();
+  som.play();
+
+}
+
+
+//Animação no segundo personagem começo
+function Personagem_2(){
+setTimeout(function (){document.getElementById("martelo").src="img/marteloN.png"}, 100);
+
+document.getElementById("martelo").src="img/marteloB.png";
+}
+//Animação no segundo personagem Fim
+
+//Inicio no cronometro
 var segundo = 0+"0";
 var minuto = 0+"0";
 var hora = 0+"0";
-
 function tempo(){
    if (segundo < 59){
       segundo++
@@ -28,18 +46,22 @@ function tempo(){
       }
       form.cronometro.value = hora +":"+ minuto +":"+ segundo
 }
+//Fim no cronometro
+
+//Função que conta
 function contador(){
   pontuacao +=1;
-
   document.getElementById("engragem").innerHTML = "Engrenagem: " + pontuacao;
 }
+//função que conta fim
 
 //Funçors de melhoramentos acresentando a quantidade pedida
-function acresenta_1(){
 
+function acresenta_1(){
     pontuacao +=1;
     document.getElementById("engragem").innerHTML = "Engrenagem: " + pontuacao;
 }
+
 function acresenta_2(){
     pontuacao +=4;
     document.getElementById("engragem").innerHTML = "Engrenagem: " + pontuacao;
@@ -51,15 +73,15 @@ function acresenta_3(){
 //Fim nas funçoes de acressentamento
 
 //Função que aumenta opacity ao comprar o upgrade
-function upgrade1(){
+function ver_1(){
   document.getElementById("Mel1").style.opacity = "1.0";
 }
 
-function upgrade2(){
+function ver_2(){
   document.getElementById("Mel2").style.opacity = "1.0";
 }
 
-function upgrade3(){
+function ver_3(){
   document.getElementById("Mel3").style.opacity = "1.0";
 }
 //fim no aumento de opacity quando o upgrade e comprado
@@ -71,11 +93,8 @@ function upgrade3(){
 function Melhoramento_1(){
     if(pontuacao>=20 && melhoramentos[0]===false){
         melhoramentos[0]=true;
-        setInterval(acresenta_1, 20000)
-        upgrade1();
-
+        ver_1();
 }
-
 }
 
 //A cada 60 segundo acresenta 4 as Engrenagem
@@ -86,7 +105,7 @@ function Melhoramento_2(){
   if(pontuacao>=60 && melhoramentos[1]===false){
       melhoramentos[1]=true;
       setInterval(acresenta_2, 20000)
-      upgrade2();
+      ver_2();
 }
 
 //A cada 60 segundo acresenta 4 as Engrenagem
@@ -99,7 +118,7 @@ function Melhoramento_3(){
   if(pontuacao>=100 && melhoramentos[2]===false){
       melhoramentos[2]=true;
       setInterval(acresenta_3, 10000)
-      upgrade3();
+      ver_3();
     }
 }
 

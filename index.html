@@ -6,6 +6,10 @@ Objetivo sucinto do programa: Um jogo incremental na qual o usuario irar jogar e
   <title>Game Cool</title>
   <head>
      <link rel="stylesheet" type="text/css" href="estilos.css"/>
+     <audio id="meuAudio">
+         <source src="som\som.ogg" type="audio/ogg">
+         <source src="som\som.mp3" type="audio/mpeg">
+     </audio>
      <script type="text/javascript" src="script.js"></script>
      <meta name="description" content="Aprenda a usar a tag div em HTML & CSS">
 
@@ -15,7 +19,8 @@ Objetivo sucinto do programa: Um jogo incremental na qual o usuario irar jogar e
 
       <div id="jogo">
 
-          <img align="center"  id="bloco" class="ImagemMes" src="img/blocoFerro.png" alt="blocoFerro"  width="500" height="333" onclick="contador();" onclick="playAudio();">
+          <img align="center"  id="bloco" class="ImagemMes" src="img/blocoFerro.png" alt="blocoFerro"  width="500" height="333" onclick="contador(); Personagem_2(); Rep_Audio();">
+          <img aling="bottom"  id="martelo" class="ImagemMes" src="img/marteloN.png" alt="Martelo" widht="250" height="166">
       </div>
 
         <div id="cronometrol">

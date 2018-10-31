@@ -8,13 +8,17 @@
   border: 10px solid;
 
 }
+
 #jogo{
   border: double;
   width: 500px;
   background-color: #669999;
 }
 
+#martelo{
+  background: white;
 
+}
 
 .Ldiv{
   border-left: 6px solid black;
