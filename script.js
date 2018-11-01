@@ -48,7 +48,7 @@ function tempo(){
 //Função que conta
 function contador(){
   pontuacao += 1;
-  document.getElementById("engragem").innerHTML = "Engrenagem: " + pontuacao;
+  document.getElementById("engragem").innerHTML = "Pontos: " + pontuacao;
   verifica(pontuacao);
   console.log(pontuacao);
 

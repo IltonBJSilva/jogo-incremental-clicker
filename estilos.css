@@ -11,17 +11,29 @@
 
 
 #cronometrol{
-
-
+  margin-left: 40%;
+  margin-right: 50%;
+  margin-top: -44%;
 }
 
 #engragem{
 color: #e5e0e0;
+margin-left: 10%;
+margin-right: 20%;
+
 }
 
 #jogo{
   width: 500px;
 
+}
+#bloco{
+  margin-top: 30%;
+
+}
+#martelo{
+  margin-top: -79%;
+  margin-left: 70%;
 }
 #Mel2{
   left: 90%;
