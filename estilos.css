@@ -6,25 +6,39 @@
   font-style: italic;
   font-size: 20px;
   border: 10px solid;
+}
 
+
+
+#cronometrol{
+
+
+}
+
+#engragem{
+color: #e5e0e0;
 }
 
 #jogo{
-  border: double;
   width: 500px;
-  background-color: #669999;
+
+}
+
+#Titulo_Melhoramento{
+  width: 150px;
+ color: #e5e0e0;
+ border: 10px solid #52a589;
+ border-right: -500px;
 }
 
 #martelo{
-  background: white;
+width: 200px;
+right: 200px;
 
 }
 
-.Ldiv{
-  border-left: 6px solid black;
-  padding: 10px;
-  padding-top: 1px;
-  padding-left: 2px;
+.telaPrinc{
+
 
   height: 657px;
   position: absolute;
@@ -32,18 +46,9 @@
   margin-left: -3px;
   top: 0;
 }
-.vld{
-width:100%;
-height:1px;
-background: #fff
 
-}
-.Upg{
-  border-style: outset;
-}
-.Sep{
-  border-style: 20px solid;
-}
+
+
 .Melh {
 width: 110px;/* Faz a largura ficar igual a da largura da imagem de exemplo */
 height: 110px;/* Faz a altura ficar igual a da altura da imagem de exemplo */
