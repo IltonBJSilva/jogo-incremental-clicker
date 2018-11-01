@@ -23,6 +23,25 @@ color: #e5e0e0;
   width: 500px;
 
 }
+#Mel2{
+  left: 90%;
+
+}
+
+
+.infor{
+  color: white;
+  margin-left: 10%;
+  margin-right: 60%;
+  font-size: 20px;
+
+}
+
+.Melh{
+  margin-left: 10%;
+  margin-right: 64%;
+
+}
 
 #Titulo_Melhoramento{
   width: 150px;
@@ -33,18 +52,20 @@ color: #e5e0e0;
 
 #martelo{
 width: 200px;
-right: 200px;
 
 }
 
 .telaPrinc{
 
-
+  width: 400px;
+  position: absolute;
+  bottom:10px;
+  right:20px;
   height: 657px;
   position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  top: 0;
+  left: 60%;
+  right: 20%
+  top: 20px;
 }
 
 

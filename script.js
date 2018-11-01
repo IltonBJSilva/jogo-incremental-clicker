@@ -61,7 +61,7 @@ function contador2(){
 //função que conta fim
 
 function verifica(pontuacao){
-  if(pontuacao == 2 && melhoramentos[0] == false){
+  if(pontuacao == 20 && melhoramentos[0] == false){
       melhoramentos[0] = true;
       console.log('up1');
       setInterval(contador, 20000);
