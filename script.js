@@ -8,9 +8,10 @@ function repeticaoAudio(){
 
 //Animação no segundo personagem começo
 function personagem2(){
-setTimeout(function (){
-  document.getElementById("martelo").src="img/marteloN.png"}, 100);
-  document.getElementById("martelo").src="img/marteloB.png";
+	document.getElementById("martelo").src="img/marteloB.png";
+	setTimeout(function (){
+  		document.getElementById("martelo").src="img/marteloN.png";
+	}, 100);
 }
 //Animação no segundo personagem Fim
 
@@ -51,7 +52,6 @@ function contador(){
   pontuacao += 1;
   document.getElementById("engragem").innerHTML = "Pontos: " + pontuacao;
   verifica(pontuacao);
-
 }
 
 function contador2(){
