@@ -40,7 +40,7 @@ function tempo(){
 	minuto = 0+"0";
 	hora = 0+"0";
       }
-      form.cronometro.value = hora +":"+ minuto +":"+ segundo
+      document.getElementById("cronometrol").innerHTML = minuto +":"+ segundo;
 }
 //Fim no cronometro
 

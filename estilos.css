@@ -1,26 +1,26 @@
   body{
 
   padding: 60px;
-  border: 1px solid #4CAF50;
-  left: 20px;
   font-style: italic;
-  font-size: 20px;
-  border: 10px solid;
 }
 
 
 
 #cronometrol{
   margin-left: 40%;
-  margin-right: 50%;
-  margin-top: -44%;
+  margin-right: 100%;
+  margin-top: -41%;
+  margin-bottom: 70px;
+  color: cornflowerblue;
+  font-size: 300%;
 }
 
 #engragem{
 color: #e5e0e0;
 margin-left: 10%;
-margin-right: 20%;
-
+margin-right: 10%;
+margin-top: -10%;
+font-size: 	60px;
 }
 
 #jogo{
@@ -56,7 +56,7 @@ margin-right: 20%;
 }
 
 #Titulo_Melhoramento{
-  width: 150px;
+ width: 150px;
  color: #e5e0e0;
  border: 10px solid #52a589;
  border-right: -500px;
