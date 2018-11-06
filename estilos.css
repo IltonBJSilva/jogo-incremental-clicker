@@ -7,12 +7,12 @@
 
 
 #cronometrol{
-  margin-left: 40%;
-  margin-right: 100%;
+  margin-left: 500px;
+  margin-right: 100px;
   margin-top: -41%;
   margin-bottom: 70px;
-  color: cornflowerblue;
-  font-size: 300%;
+  color: #e5e0e0;
+  font-size: 57px;
 }
 
 #engragem{
@@ -21,6 +21,8 @@ margin-left: 10%;
 margin-right: 10%;
 margin-top: -10%;
 font-size: 	60px;
+color: #e5e0e0;
+
 }
 
 #jogo{
@@ -42,7 +44,7 @@ font-size: 	60px;
 
 
 .infor{
-  color: white;
+  color: #e5e0e0;
   margin-left: 10%;
   margin-right: 60%;
   font-size: 20px;
@@ -58,7 +60,7 @@ font-size: 	60px;
 #Titulo_Melhoramento{
  width: 150px;
  color: #e5e0e0;
- border: 10px solid #52a589;
+ border: 1px solid white	;
  border-right: -500px;
 }
 

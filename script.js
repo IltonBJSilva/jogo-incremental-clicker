@@ -15,9 +15,10 @@ setTimeout(function (){
 //Animação no segundo personagem Fim
 
 //Inicio no cronometro
-var segundo = 0+"0";
-var minuto = 0+"0";
-var hora = 0+"0";
+var segundo = 0 + "0";
+var minuto = 0 + "0";
+var hora = 0 + "0"; 
+
 function tempo(){
    if (segundo < 59){
       segundo++
@@ -50,7 +51,6 @@ function contador(){
   pontuacao += 1;
   document.getElementById("engragem").innerHTML = "Pontos: " + pontuacao;
   verifica(pontuacao);
-  console.log(pontuacao);
 
 }
 
